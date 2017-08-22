@@ -1,0 +1,4 @@
+# robots.txt
+User-agent: *
+Disallow:
+Sitemap: https://0x7c00.me/sitemap.xml

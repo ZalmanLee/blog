@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+output
+output_zip
+*.pyc
+*.pyo
