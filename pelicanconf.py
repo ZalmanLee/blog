@@ -30,7 +30,8 @@ CNZZ_ANALYTICS = True
 FEED_ATOM = 'feeds/atom.xml'
 FEED_RSS = 'feeds/rss.xml'
 
-LINKS = (("灰色地带", "http://ev1l.cn/"),)
+LINKS = (("灰色地带", "http://ev1l.cn/"),
+         ("Onioner", "http://onioner.com/"),)
 
 # Social widget
 SOCIAL = (("weibo", "http://weibo.com/zalmanlee"),)
