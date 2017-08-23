@@ -36,6 +36,7 @@ help:
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
 	@echo '   make upload                         upload the web site to vps         '
+	@echo '   make deploy                         excute remote shell to deploy      '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
