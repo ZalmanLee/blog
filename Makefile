@@ -52,6 +52,7 @@ serve:
 
 
 upload: html
+	[ -d $(OUTPUTDIRZIP) ] || mkdir -p $(OUTPUTDIRZIP)
 	cd $(OUTPUTDIR) && zip -r $(OUTPUTDIRZIP)/blog_$(DATESTAMP).zip ./*
 	scp -P $(SSH_PORT) $(OUTPUTDIRZIP)/blog_$(DATESTAMP).zip $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
