@@ -210,3 +210,8 @@ ol {
     font-size: 1px;
     line-height: 0px;
 }
+img { height:auto; max-width:600px; overflow:hidden; }
+
+.hilitewrapper {
+max-width:inherit; overflow-x:auto; overflow-y:hidden; padding: 0px;
+}
