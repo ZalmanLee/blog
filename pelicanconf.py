@@ -9,7 +9,7 @@ SITEURL = 'https://blog.0x7c00.me'
 PATH = 'content'
 
 STATIC_PATHS = [
-    'photo',
+    'static',
     'extra/robots.txt',
     'extra/favicon.ico',
 ]
@@ -51,6 +51,7 @@ PLUGINS = [
     'neighbors',
     'sitemap',
     'always_modified',
+    'better_code_samples',
 ]
 
 SITEMAP = {
