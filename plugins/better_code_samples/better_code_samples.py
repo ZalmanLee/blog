@@ -45,7 +45,7 @@ def content_object_init(instance):
         soup = BeautifulSoup(content)
 
         if 'table' in content:
-            for ctbl in soup.find_all('table', class_="codehilitetable"):
+            for ctbl in soup.find_all('table', class_="hilitetable"):
                 wrapper_tag = soup.new_tag('div')
                 wrapper_tag['class'] = 'hilitewrapper'
                 ctbl.wrap(wrapper_tag)
