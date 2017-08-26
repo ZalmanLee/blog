@@ -10,7 +10,6 @@ Slug:ubuntu_my_conkyrc
 最近折腾了一下家里的电脑。装了ubuntu16.04，配置了conky。分享下自己的conkyrc。主要抄的[MyConky](http://martinsosic.com/linux/2015/07/06/my-conky.html)这篇。
 
 
-    #!python
     use_xft yes
     font Microsoft YaHei:size=8
     xftfont Microsoft YaHei:size=8
