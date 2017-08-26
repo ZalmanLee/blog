@@ -44,7 +44,7 @@ DISPLAY_PAGES_ON_MENU = True
 
 RELATIVE_URLS = True
 
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 
 PLUGINS = [
     'gzip_cache',
