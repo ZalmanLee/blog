@@ -90,4 +90,4 @@ ${color #ffd700}${hr 1}$color
 
 效果是这样的～
 
-![avatar](/static/img/ubuntu_desktop.png)
+![avatar](http://zalman-blog.oss-cn-beijing.aliyuncs.com/2017-08-27-ubuntu_desktop.png)
