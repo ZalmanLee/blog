@@ -51,7 +51,7 @@ PLUGINS = [
     'neighbors',
     'sitemap',
     'always_modified',
-    'better_code_samples',
+    'md_prism_highlight'
 ]
 
 SITEMAP = {
@@ -67,4 +67,18 @@ SITEMAP = {
         "pages": "monthly",
     }
 }
+
 ALWAYS_MODIFIED = True
+
+PRISM_PRESET = {
+    'mypreset': {
+        'lineno': True,
+        'line': '1-4,7',
+        'user': 'supercoolusername',
+        'start': '2'
+    },
+    'another': {
+        'lineno': False,
+        'start': '-5'
+    }
+}
