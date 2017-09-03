@@ -26,6 +26,7 @@ sudo pip install supervisor
 ```shell preset=mypreset lineno=True
 sudo mkdir -p /etc/supervisord/conf.d
 sudo echo_supervisord_conf > /etc/supervisord.conf
+sudo echo "[include]" >> /etc/supervisord.conf
 sudo echo "files = /etc/supervisord/conf.d/*.ini" >> /etc/supervisord.conf
 ```
 

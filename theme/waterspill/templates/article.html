@@ -18,22 +18,18 @@
         {% endfor %}</h3>
 
     </div><!-- end #blogItem -->
-    {% if DISQUS_SITENAME %}
-        <div class="blogItem">
+    {% if USE_ISSO %}
+    <div id="wrapper" style="width: 500px; text-align: left; margin-left: auto; margin-right: auto;">
+        <script
+                data-isso-css="true"
+                data-isso="/isso/"
+                src="/isso/js/embed.min.js"
+                data-isso-lang="zh"
+                data-isso-vote="true">
+        </script>
 
-            <h2>Commentaires</h2>
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-                var disqus_identifier = "{{ article.url }}";
-                (function () {
-                    var dsq = document.createElement('script');
-                    dsq.type = 'text/javascript';
-                    dsq.async = true;
-                    dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-        </div>
+        <section id="isso-thread" data-title="APIDoc"></section>
+    </div>
     {% endif %}
     <ul>
         {% if article.prev_article %}
