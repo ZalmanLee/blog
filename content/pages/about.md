@@ -17,6 +17,6 @@ Slug:about
 		<body>
 			<h1>About</h1>
 			<p>您好，我是zalman。一个靠卖代码为生的人。</p>
-			<a href="mailto:zalman_lee@163.com">我的邮箱</a>
+			<a href="mailto:mail@0x7c00.me">我的邮箱</a>
 		</body>
 	</html>
