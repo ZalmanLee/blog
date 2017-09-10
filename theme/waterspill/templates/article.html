@@ -7,6 +7,11 @@
 
         <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
         <h3>Le {{ article.locale_date }}</h3>
+        {% if article.toc %}
+            <div class="col-lg-3 hidden-xs hidden-sm">
+                {{ article.toc }}
+            </div>
+        {% endif %}
 
         {{ article.content }}
         {% include 'twitter.html' %}
@@ -19,17 +24,17 @@
 
     </div><!-- end #blogItem -->
     {% if USE_ISSO %}
-    <div id="wrapper" style="width: 500px; text-align: left; margin-left: auto; margin-right: auto;">
-        <script
-                data-isso-css="true"
-                data-isso="/isso/"
-                src="/isso/js/embed.min.js"
-                data-isso-lang="zh"
-                data-isso-vote="true">
-        </script>
+        <div id="wrapper" style="width: 500px; text-align: left; margin-left: auto; margin-right: auto;">
+            <script
+                    data-isso-css="true"
+                    data-isso="/isso/"
+                    src="/isso/js/embed.min.js"
+                    data-isso-lang="zh"
+                    data-isso-vote="true">
+            </script>
 
-        <section id="isso-thread" data-title="{{ article.url }}"></section>
-    </div>
+            <section id="isso-thread" data-title="{{ article.url }}"></section>
+        </div>
     {% endif %}
     <ul>
         {% if article.prev_article %}
