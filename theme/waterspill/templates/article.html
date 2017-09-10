@@ -8,7 +8,8 @@
         <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
         <h3>Le {{ article.locale_date }}</h3>
         {% if article.toc %}
-            <div class="col-lg-3 hidden-xs hidden-sm">
+            <div id="toc-article">
+                <div class="toc-title">文章目录</div>
                 {{ article.toc }}
             </div>
         {% endif %}
