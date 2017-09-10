@@ -7,9 +7,13 @@
 
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
-    <!--<link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet" type="text/css" media="screen"/>-->
-    <link href="{{ SITEURL }}/theme/css/prism.css" rel="stylesheet" type="text/css" media="screen"/>
-    <script type="text/javascript" src="/theme/js/prism.js"></script>
+    <script src="https://cdn.bootcss.com/prism/1.6.0/prism.min.js"></script>
+    <script src="https://cdn.bootcss.com/prism/1.6.0/components/prism-python.min.js"></script>
+    <script src="https://cdn.bootcss.com/prism/1.6.0/components/prism-bash.min.js"></script>
+    <script src="https://cdn.bootcss.com/prism/1.6.0/components/prism-c.min.js"></script>
+    <script src="https://cdn.bootcss.com/prism/1.6.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <link href="https://cdn.bootcss.com/prism/1.6.0/themes/prism.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/prism/1.6.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
     <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed"/>
     {% if FEED_RSS %}
         <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate"
