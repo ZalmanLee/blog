@@ -90,7 +90,7 @@ class HtmlTreeNode(object):
                     self.id, self.header)
 
         if self.children:
-            ret += "<ul>{}</ul>".format('{}'*len(self.children)).format(
+            ret += "<ol>{}</ol>".format('{}'*len(self.children)).format(
                     *self.children)
 
         # each list
