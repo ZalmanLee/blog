@@ -1,12 +1,12 @@
 PY?=python
 PELICAN?=pelican
 PELICANOPTS=
-PORT=8000
+PORT=80
 
 BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
+INPUTDIR=content
+OUTPUTDIR=output
+CONFFILE=pelicanconf.py
 OUTPUTDIRZIP=$(BASEDIR)/output_zip
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 DATESTAMP=$(shell /bin/date "+%Y_%m_%d_%H_%M_%S")

@@ -4,3 +4,6 @@ output
 output_zip
 *.pyc
 *.pyo
+*.un~
+*~
+
